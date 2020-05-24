@@ -15,9 +15,16 @@ export const Form = styled.div`
   overflow: hidden;
 `;
 
-export const Inputs = styled.div``;
+export const Inputs = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
 
-export const NumberInput = styled.input``;
+export const NumberInput = styled.input`
+  text-align: center;
+`;
 
 export const Sum = styled.span`
   font-weight: bold;
