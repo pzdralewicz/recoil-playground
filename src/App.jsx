@@ -6,10 +6,8 @@ import { SumCalculator } from "./components/SumCalculator/SumCalculator";
 const App = () => (
   <>
     <Styled.AppContainer>
-      <Styled.Components>
-        <Counter />
-        <SumCalculator />
-      </Styled.Components>
+      <Counter />
+      <SumCalculator />
     </Styled.AppContainer>
   </>
 );
