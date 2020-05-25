@@ -4,10 +4,14 @@ import { Counter } from "./components/Counter/Counter";
 import { SumCalculator } from "./components/SumCalculator/SumCalculator";
 
 const App = () => (
-  <Styled.AppContainer>
-    <Counter />
-    <SumCalculator />
-  </Styled.AppContainer>
+  <>
+    <Styled.AppContainer>
+      <Styled.Components>
+        <Counter />
+        <SumCalculator />
+      </Styled.Components>
+    </Styled.AppContainer>
+  </>
 );
 
 export default App;
