@@ -9,9 +9,9 @@ import "@pzdralewicz/components/dist/index.css";
 
 ReactDOM.render(
   <React.StrictMode>
+    <ParticlesBackground />
+    <Logo />
     <RecoilRoot>
-      <ParticlesBackground />
-      <Logo />
       <App />
     </RecoilRoot>
   </React.StrictMode>,
