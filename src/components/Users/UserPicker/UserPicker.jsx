@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React from "react";
 import * as Styled from "./UserPicker.styles";
 import {
   selectedUserIdState,
@@ -16,20 +16,20 @@ export const UserPicker = () => {
     setSelectedUserId(e.target.value);
   };
 
-  const renderUsersListMemoized = useCallback(() => {
+  const renderList = () => {
     return userList.map((user) => (
       <Styled.Option value={user.id} key={user.id}>
         {user.username}
       </Styled.Option>
     ));
-  }, [userList]);
+  };
 
   return (
     <Styled.Select onChange={onChange} value={selectedUserId}>
       <Styled.Option value={"null"} disabled>
         Wybierz użytkownika...
       </Styled.Option>
-      {renderUsersListMemoized()}
+      {renderList()}
     </Styled.Select>
   );
 };
