@@ -1,7 +1,7 @@
 import React from "react";
 import * as Styled from "./Counter.styles";
 import { useRecoilState } from "recoil";
-import { counterState } from "../../recoil/state";
+import { counterState } from "../../recoil/counter";
 
 export const Counter = () => {
   const [counter, setCounter] = useRecoilState(counterState);

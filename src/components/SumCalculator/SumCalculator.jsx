@@ -1,7 +1,7 @@
 import React from "react";
 import * as Styled from "./SumCalculator.styles";
 import { useRecoilState, useRecoilValue } from "recoil";
-import { sumInputsState, sumState } from "../../recoil/state";
+import { sumInputsState, sumState } from "../../recoil/sum-calculator";
 
 export const SumCalculator = () => {
   const [inputsState, setInputsState] = useRecoilState(sumInputsState);
